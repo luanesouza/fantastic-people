@@ -1,0 +1,51 @@
+p {
+  font-family: 'Noto Sans SC', sans-serif;
+  text-align: justify;
+  padding: 5rem;
+}
+
+.name-dob {
+  margin: 2rem;
+}
+
+#name {
+  font-family: 'Patua One', cursive;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#line {
+  text-align: center;
+  font-weight: 900;
+}
+
+#dob {
+  font-size: 15px;
+  text-align: center;
+}
+
+.person-info > img {
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  padding: 3rem;
+  margin: auto;
+}
+
+.person-info {
+  display: flex;
+}
+
+#meme {
+  width: 90vw;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
