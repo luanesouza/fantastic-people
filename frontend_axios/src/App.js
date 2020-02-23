@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import PersonContainer from './components/PersonContainer'
-// import { getPeopleAxios, getPeopleFetch } from './utils'
-const axios = require('axios');
-// const url = 'https://historical-figures.herokuapp.com/'
+import { getPeopleFetch,
+        deletePeopleFetch,
+        createPeopleFetch } from './utils'
 const url = 'http://localhost:3000'
 
 class App extends Component {
@@ -12,21 +12,18 @@ class App extends Component {
     error: true
   }
 
-  componentDidMount(){
-    axios(`${url}/people`)
-      .then(response => {
-        if(response.status === 200 || response){
-          this.setState({
-            people: response.data,
-            error: false
-          })
-        } else {
-          this.setState({
-            error: true
 
-          })
-        }
-      })
+
+  componentDidMount(){
+
+    // change this from fetch to axios, and make this method async
+    // do not forget to set error to false when you setState
+
+    getPeopleFetch()
+    .then(data => {
+      console.log(data)
+    })
+
 
   }
   render(){
