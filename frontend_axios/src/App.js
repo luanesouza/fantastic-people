@@ -21,7 +21,10 @@ class App extends Component {
 
     getPeopleFetch()
     .then(data => {
-      console.log(data)
+      this.setState({
+        people: data,
+        error: false
+      })
     })
 
 
