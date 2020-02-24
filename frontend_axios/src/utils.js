@@ -59,4 +59,4 @@ let data2 = {
   dob: 'August 26, 1918'
 }
 
-export { getPeopleFetch, getPeopleAxios }
+export { getPeopleFetch, getPeopleAxios, deletePersonFetch,  }

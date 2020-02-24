@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import PersonContainer from './components/PersonContainer'
 import { getPeopleFetch,
-        deletePeopleFetch,
-        createPeopleFetch } from './utils'
-const url = 'http://localhost:3000'
+        deletePersonFetch,
+        createPersonFetch } from './utils'
 
 class App extends Component {
   state = {
@@ -26,7 +25,6 @@ class App extends Component {
         error: false
       })
     })
-
 
   }
   render(){
